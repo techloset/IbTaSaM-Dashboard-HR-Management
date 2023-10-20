@@ -3,7 +3,7 @@ import circle from "../../assets/svg/circle.svg";
 
 export default function EmployeeComposition() {
   return (
-    <div class="w-[375px] h-[295px] bg-white rounded-md border-2 border-violet-100 p-6 mt-2">
+    <div class="max-w-[375px] md:w-[375px] h-[295px] bg-white rounded-md border-2 border-violet-100 p-6 mx-auto">
       <div class="text-black text-xl font-bold font-['Product Sans'] tracking-tight">
         Employee Composition
       </div>

@@ -40,7 +40,7 @@ const SideBar = () => {
         className="absolute  left-0 z-40 transition-transform -translate-x-full sm:translate-x-0 bg-white"
         aria-label="Sidebar"
       >
-        <div className="w-[273px] h-[922px] overflow-y-auto flex flex-col flex-shrink-0 border-r-[1px] border-_borderColor">
+        <div className="w-[273px] h-[133vh] xl:h-[892px] overflow-y-auto flex flex-col flex-shrink-0 border-r-[1px] border-_borderColor">
           <a href="#" className="flex items-center justify-around my-8">
             <div className="flex items-center justify-between ml-4">
               <img src={img} className="w-[52px] h-[52px] mr-3" alt="Profile" />

@@ -21,7 +21,7 @@ module.exports = {
 
         _card: "#949494",
 
-        // _gbColor: "#F8FAFB",
+        _gbColor: "#F8FAFB",
       },
     },
   },
