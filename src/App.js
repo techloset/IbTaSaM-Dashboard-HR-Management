@@ -8,23 +8,21 @@ import EmployeeComposition from "./sections/employeeComposition/EmployeeComposit
 
 function App() {
   return (
-    <>
-      <div className="bg-_gbColor">
-        <Header />
+    <div className="bg-_gbColor">
+      <Header />
 
-        <SideBar />
+      <SideBar />
 
-        <div className="p-5 sm:ml-[279px]">
-          <TopCards />
-          <JobStatistics />
+      <div className="p-5 sm:ml-[279px]">
+        <TopCards />
+        <JobStatistics />
 
-          <div className="xl:flex gap-5">
-            <EmployeeStatus />
-            <EmployeeComposition />
-          </div>
+        <div className="xl:flex gap-5">
+          <EmployeeStatus />
+          <EmployeeComposition />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

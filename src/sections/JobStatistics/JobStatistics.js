@@ -76,7 +76,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[111px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[81px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Jan
                 </div>
               </div>
@@ -84,7 +84,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[142px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[106px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Feb
                 </div>
               </div>
@@ -92,7 +92,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[176px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[127px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Mar
                 </div>
               </div>
@@ -100,7 +100,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[131px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[96px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Apr
                 </div>
               </div>
@@ -108,7 +108,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[94px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[61px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   May
                 </div>
               </div>
@@ -116,7 +116,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[131px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[94px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Jun
                 </div>
               </div>
@@ -124,20 +124,21 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[142px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[110px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Jul
                 </div>
               </div>
               <div className="flex flex-col items-center">
                 <div class="w-[71.314px] h-[207px] bg-violet-50 rounded-lg flex flex-col items-end justify-end flex-shrink-0">
-                  <div class="w-8 h-[21px] mx-auto px-2 py-0.5 bg-blue-900 rounded shadow justify-start items-start gap-2.5 mb-5 inline-flex">
+                  <div class="graphShadow w-8 h-[21px] mx-auto px-2 py-0.5 bg-blue-900 rounded shadow justify-start items-start gap-2.5 inline-flex">
                     <div class="text-center text-white text-sm font-normal font-['Product Sans'] tracking-wide">
                       77
                     </div>
                   </div>
+                  <img src={downArrow} className="mt-[-4px] mx-auto" alt="" />
                   <div class="w-[71px] h-[136px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-[#1F1515] text-[13px] font-[600] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-[#1F1515] text-[13px] font-[600] font-['Poppins'] mt-[11px]">
                   Aug
                 </div>
               </div>
@@ -145,7 +146,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[181px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[117px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Sep
                 </div>
               </div>
@@ -153,7 +154,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[152px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[94px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-[11px]">
                   Oct
                 </div>
               </div>
@@ -161,7 +162,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[111px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[76px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-medium font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-medium font-['Poppins'] mt-[11px]">
                   Nov
                 </div>
               </div>
@@ -169,7 +170,7 @@ const JobStatistics = () => {
                 <div class="w-[55.27px] h-[168px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
                   <div class="w-[55px] h-[131px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
-                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-medium font-['Poppins'] mt-2">
+                <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-medium font-['Poppins'] mt-[11px]">
                   Dec
                 </div>
               </div>
