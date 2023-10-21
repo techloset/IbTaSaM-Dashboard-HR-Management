@@ -62,7 +62,7 @@ const JobStatistics = () => {
                 20
               </div>
             </div>
-            <div className="flex flex-col space-y-12 ml-10 flex-shrink-0 [&>div]:w-[280px] [&>div]:md:w-[330px] [&>div]:lg:w-[590px] [&>div]:xl:max-w-[1000px]">
+            <div className="flex flex-col space-y-12 ml-10 flex-shrink-0 [&>div]:w-[280px] [&>div]:md:w-[330px] [&>div]:lg:w-[590px] [&>div]:xl:w-[1000px]">
               <div class="h-[0px] mx-auto border border-dotted border-neutral-200"></div>
               <div class="h-[0px] mx-auto border border-dotted border-neutral-200"></div>
               <div class="h-[0px] mx-auto border border-dotted border-neutral-200"></div>
@@ -71,98 +71,98 @@ const JobStatistics = () => {
             </div>
           </div>
           <div className="">
-            <div className="absolute flex justify-end items-end sm:space-x-1 lg:space-x-3 xl:space-x-[29px] right-0 bottom-[-10%]">
+            <div className="absolute flex justify-end items-end space-x-[-2px] sm:space-x-1 lg:space-x-3 xl:space-x-[29px] right-0 bottom-[-10%]">
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[111px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[81px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[111px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[81px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Jan
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[142px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[106px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[142px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[106px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Feb
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[176px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[127px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[176px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[127px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Mar
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[131px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[96px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[131px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[96px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Apr
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[94px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[61px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[94px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[61px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   May
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[131px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[94px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[131px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[94px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Jun
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[142px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[110px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[142px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[110px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Jul
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[71.314px] h-[207px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[71px] h-[136px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[71.314px] h-[207px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[71px] h-[136px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-[#1F1515] text-[13px] font-[600] font-['Poppins'] mt-2">
                   Aug
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[181px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[117px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[181px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[117px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Sep
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[152px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[94px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[152px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[94px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-[500] font-['Poppins'] mt-2">
                   Oct
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[111px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[76px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[111px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[76px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-medium font-['Poppins'] mt-2">
                   Nov
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <div class="w-2 lg:w-[55.27px] h-[168px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
-                  <div class="w-2 lg:w-[55px] h-[131px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
+                <div class="w-2 md:w-6 lg:w-10 xl:w-[55.27px] h-[168px] bg-violet-50 rounded-lg flex items-end flex-shrink-0">
+                  <div class="w-2 md:w-6 lg:w-10 xl:w-[55px] h-[131px] bg-indigo-600 rounded-lg flex-shrink-0 graphShadow"></div>
                 </div>
                 <div class="w-[26.74px] text-center text-stone-300 text-[13px] font-medium font-['Poppins'] mt-2">
                   Dec

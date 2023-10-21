@@ -1,8 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import SideBar from "./components/SideBar/SideBar";
-import trendImg from "../src/assets/svg/bx_trending-up.svg";
-import circle from "../src/assets/svg/circle.svg";
 import TopCards from "./sections/topCards/TopCards";
 import JobStatistics from "./sections/JobStatistics/JobStatistics";
 import EmployeeStatus from "./sections/employeeStatus/EmployeeStatus";
