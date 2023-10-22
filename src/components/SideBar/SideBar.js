@@ -29,8 +29,8 @@ const SideBar = () => {
         id="logo-sideba"
         className={`absolute  left-0 z-40 transition-transform -translate-x-full md:translate-x-0 bg-white ${
           show
-            ? "hidden md:inline"
-            : "inline"
+            ? "hidden md:inline transition-transform"
+            : "inline translate-x-0 transition-transform"
         }`}
         aria-label="Sidebar"
       >
