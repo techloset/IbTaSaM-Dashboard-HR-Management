@@ -13,217 +13,108 @@ import {
 
 const data = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: "Jan",
+    uv: 18,
+    pv: 30,
+    number: 80,
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: "Feb",
+    uv: 12,
+    pv: 43,
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: "Mar",
+    uv: 20,
+    pv: 50,
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    name: "Apr",
+    uv: 10,
+    pv: 40,
   },
   {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    name: "May",
+    uv: 13,
+    pv: 23,
   },
   {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    name: "Jun",
+    uv: 10,
+    pv: 40,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "July",
+    uv: 12,
+    pv: 43,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "Aug",
+    uv: 30,
+    pv: 53,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "Sep",
+    uv: 25,
+    pv: 45,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "Oct",
+    uv: 20,
+    pv: 40,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "Nov",
+    uv: 18,
+    pv: 30,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    name: "Dec",
+    uv: 15,
+    pv: 55,
   },
 ];
 
 export default class ReChart extends PureComponent {
-  static demoUrl = "https://codesandbox.io/s/stacked-bar-chart-s47i2";
+  //   static demoUrl = "https://codesandbox.io/s/stacked-bar-chart-s47i2";
 
   render() {
     return (
       <ResponsiveContainer width="100%" height="85%">
         <BarChart
-          width={500}
-          height={300}
+          width="100%"
+          height="100%"
           data={data}
           margin={{
-            top: 0,
+            top: 10,
             right: 0,
-            left: 0,
+            left: -30,
             bottom: 0,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Cell />
-          {/* <Tooltip /> */}
-          {/* <Legend /> */}
-          <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-          <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
+          <CartesianGrid
+            strokeDasharray="4"
+            stroke="#E0E0E0"
+            horizontal={true}
+            vertical={false}
+          />
+          <XAxis
+            dataKey="name"
+            stroke="#BCBCBC"
+            fontSize={13}
+            fontWeight={500}
+          />
+          <YAxis
+            dataKey="number"
+            style={{ outline: "none" }}
+            stroke="#BCBCBC"
+            fontSize={14.335}
+            fontWeight={400}
+          />
+          <Bar dataKey="pv" stackId="a" fill="#5932EA" />
+          <Bar dataKey="uv" stackId="a" fill="#F2EFFF" />
         </BarChart>
       </ResponsiveContainer>
     );
   }
 }
-
-// // import "./styles.css";
-// import React from "react";
-// import {
-//   BarChart,
-//   Bar,
-//   XAxis,
-//   YAxis,
-//   CartesianGrid,
-//   Tooltip,
-//   Legend,
-// } from "recharts";
-
-// const data = [
-//   {
-//     name: "Jan",
-//     uv: 20,
-//     pv: 20,
-//     amt: 80,
-//   },
-//   {
-//     name: "Feb",
-//     uv: 3000,
-//     pv: 1398,
-//     // amt: 80,
-//   },
-//   {
-//     name: "Mar",
-//     uv: 2000,
-//     pv: 9800,
-//     // amt: 60,
-//   },
-//   {
-//     name: "Apr",
-//     uv: 2780,
-//     pv: 3908,
-//     // amt: 2000,
-//   },
-//   {
-//     name: "May",
-//     uv: 1890,
-//     pv: 4800,
-//     // amt: 2181,
-//   },
-//   {
-//     name: "Jun",
-//     uv: 2390,
-//     pv: 3800,
-//     // amt: 2500,
-//   },
-//   {
-//     name: "Jul",
-//     uv: 3490,
-//     pv: 4300,
-//     // amt: 2100,
-//   },
-//   {
-//     name: "Aug",
-//     uv: 3490,
-//     pv: 4300,
-//     // amt: 2100,
-//   },
-//   {
-//     name: "Sep",
-//     uv: 3490,
-//     pv: 4300,
-//     // amt: 2100,
-//   },
-//   {
-//     name: "Oct",
-//     uv: 3490,
-//     pv: 4300,
-//     // amt: 2100,
-//   },
-//   {
-//     name: "Nov",
-//     uv: 3490,
-//     pv: 4300,
-//     // amt: 2100,
-//   },
-//   {
-//     name: "Dec",
-//     uv: 3490,
-//     pv: 4300,
-//     amt: 20,
-//   },
-// ];
-
-// export default function ReChart() {
-//   return (
-//     <BarChart
-//       width={900}
-//       height={220}
-//       data={data}
-//       margin={{
-//         top: 0,
-//         right: 0,
-//         left: 0,
-//         bottom: 0,
-//       }}
-//     >
-//       <CartesianGrid strokeDasharray="4 4" />
-//       <XAxis dataKey="name" />
-//       <YAxis dataKey="amt"/>
-//       {/* <Tooltip /> */}
-//       {/* <Legend /> */}
-//       <Bar dataKey="pv" stackId="a" fill="#5932EA"/>
-//       <Bar dataKey="uv" stackId="a" fill="#F2EFFF"/>
-//     </BarChart>
-//   );
-// }
