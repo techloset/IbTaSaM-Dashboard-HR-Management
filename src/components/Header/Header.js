@@ -1,86 +1,54 @@
+import React from "react";
+import ccapital from "../../assets/svg/headerSvg/CCapital.svg";
+import csmall from "../../assets/svg/headerSvg/csmall.svg";
+import searchIcon from "../../assets/svg/headerSvg/icons_search.svg";
+import notification from "../../assets/svg/headerSvg/mi_notification.svg";
+
 const Header = () => {
   return (
     <div className="max-w-[1440px] max-h-[102px] mx-auto border-b border-_borderColor bg-white">
       <div className="grid grid-cols-12 py-3 sm:py-5">
         <div className="col-span-12 sm:col-span-5 md:col-span-3 lg:col-span-2 flex justify-center items-center lg:ml-10">
-          <div className="relative flex">
-            <svg
+          <div className="relative flex flex-shrink-0">
+            <img
+              src={ccapital}
               className="w-[32.66px] h-[32.66px]"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 29 33"
-              fill="none"
-            >
-              <path
-                d="M27.0187 22.5398C28.6076 23.4629 29.1694 25.5302 27.9387 26.8948C26.3288 28.6797 24.3282 30.0907 22.0756 31.0074C18.7887 32.3449 15.1508 32.5541 11.7322 31.6022C8.3136 30.6504 5.30739 28.5912 3.18466 25.7474C1.06194 22.9036 -0.0573268 19.436 0.0022604 15.8878C0.0618476 12.3396 1.29692 8.91151 3.51394 6.14062C5.73095 3.36972 8.80462 1.41266 12.2533 0.576114C15.7019 -0.260431 19.3307 0.0708167 22.5709 1.51795C24.7914 2.5097 26.7435 3.98715 28.2925 5.82512C29.4767 7.23022 28.8458 9.27748 27.2269 10.1467C25.6079 11.016 23.6173 10.3428 22.2398 9.12659C21.5325 8.50213 20.7304 7.9838 19.8572 7.59385C17.9619 6.74734 15.8392 6.55358 13.8219 7.04292C11.8046 7.53226 10.0067 8.67705 8.70983 10.2979C7.41298 11.9187 6.69052 13.924 6.65566 15.9995C6.62081 18.0751 7.27553 20.1035 8.51722 21.767C9.75891 23.4304 11.5174 24.635 13.5171 25.1918C15.5169 25.7486 17.6448 25.6262 19.5675 24.8438C20.4533 24.4834 21.2724 23.9923 22.0003 23.3919C23.4178 22.2227 25.4299 21.6167 27.0187 22.5398Z"
-                fill="#5932EA"
-              />
-            </svg>
-            <svg
+              alt="ccapital"
+            />
+            <img
+              src={csmall}
               className="w-[14.824px] h-[14.824px] absolute top-[8.7px] left-[9.8px]"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 14 16"
-              fill="none"
-            >
-              <path
-                d="M12.6813 10.8577C13.6534 11.4224 13.9986 12.6963 13.1914 13.4788C12.5136 14.1357 11.7121 14.6616 10.8262 15.0221C9.30664 15.6404 7.62488 15.7372 6.04446 15.2971C4.46404 14.8571 3.07426 13.9051 2.09293 12.5904C1.1116 11.2758 0.594164 9.67265 0.621711 8.03234C0.649259 6.39203 1.22023 4.80721 2.24515 3.52622C3.27008 2.24524 4.69103 1.34049 6.28534 0.953761C7.87965 0.567027 9.55721 0.720163 11.0551 1.38917C11.9284 1.77919 12.7119 2.3317 13.3672 3.01106C14.1477 3.82018 13.7599 5.08174 12.7694 5.61353C11.7789 6.14533 10.5448 5.6842 9.54191 5.17633C9.4936 5.15187 9.44461 5.12853 9.39497 5.10637C8.7198 4.80482 7.96365 4.7358 7.24504 4.91011C6.52642 5.08443 5.88594 5.49223 5.42397 6.06962C4.962 6.64701 4.70464 7.36135 4.69222 8.1007C4.67981 8.84005 4.91303 9.56263 5.35536 10.1552C5.79768 10.7478 6.42411 11.1769 7.13646 11.3752C7.84882 11.5736 8.60685 11.53 9.29178 11.2513C9.34213 11.2308 9.39187 11.2091 9.44098 11.1863C10.4604 10.7124 11.7093 10.2929 12.6813 10.8577Z"
-                fill="#16C098"
-              />
-            </svg>
+              alt="csmall"
+            />
           </div>
           <h3 className="text-[27.389px] font-[400] leading-normal tracking-[0.274px] ms-2 flex">
             Circle <span className="font-[700] ml-1">Soft</span>
           </h3>
         </div>
         <div className="col-span-9 sm:col-span-5 md:col-span-7  lg:col-span-9 flex items-center">
-          <div class="relative ms-16">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg
-                class="w-[24px] h-[24px] text-_textLightGray"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z"
-                  stroke="#A7A7A7"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
+          <div className="relative ms-16">
+            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+              <img
+                src={searchIcon}
+                className="w-[24px] h-[24px] text-_textLightGray"
+                alt="searchIcon"
+              />
             </div>
             <input
               type="search_"
               id="default-search"
-              class="block w-full p-2 pl-10 text-md text-gray-900 border-none outline-none focus:border-none placeholder:text-_textLightGray placeholder:text-[20px] placeholder:font-[400] placeholder:leading-normal placeholder:tracking-[0.2px] placeholder:pl-1 mt-0.5"
+              className="block w-full p-2 pl-10 text-md text-gray-900 border-none outline-none focus:border-none placeholder:text-_textLightGray placeholder:text-[20px] placeholder:font-[400] placeholder:leading-normal placeholder:tracking-[0.2px] placeholder:pl-1 mt-0.5"
               placeholder="Search..."
             />
           </div>
         </div>
         <div className="col-span-2 lg:col-span-1 flex items-center justify-end sm:justify-center">
           <div className="bg-[#EBEBEB] p-[7.5px] rounded-[15px] cursor-pointer inline-flex justify-center items-center">
-            <svg
+            <img
+              src={notification}
               className="w-[30px] h-[30px]"
-              viewBox="0 0 31 31"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="mi:notification">
-                <path
-                  id="Vector"
-                  d="M13.1827 4.55991C13.3695 4.0983 13.6898 3.70298 14.1027 3.42462C14.5156 3.14627 15.0022 2.99756 15.5002 2.99756C15.9981 2.99756 16.4848 3.14627 16.8977 3.42462C17.3106 3.70298 17.6309 4.0983 17.8177 4.55991C19.6661 5.06826 21.2966 6.16935 22.4586 7.69407C23.6207 9.2188 24.2501 11.0828 24.2502 12.9999V18.8712L26.5402 22.3062C26.6658 22.4944 26.7379 22.7132 26.7489 22.9393C26.7599 23.1653 26.7093 23.3901 26.6025 23.5896C26.4958 23.7891 26.3368 23.956 26.1427 24.0722C25.9486 24.1885 25.7265 24.2499 25.5002 24.2499H19.8314C19.6809 25.2913 19.1603 26.2436 18.3648 26.9323C17.5694 27.6211 16.5524 28.0002 15.5002 28.0002C14.448 28.0002 13.431 27.6211 12.6356 26.9323C11.8401 26.2436 11.3194 25.2913 11.1689 24.2499H5.50019C5.27388 24.2499 5.05182 24.1885 4.85768 24.0722C4.66354 23.956 4.50461 23.7891 4.39784 23.5896C4.29108 23.3901 4.24049 23.1653 4.25147 22.9393C4.26245 22.7132 4.33459 22.4944 4.46019 22.3062L6.75019 18.8712V12.9999C6.75019 8.9699 9.47519 5.57491 13.1827 4.55991ZM13.7327 24.2499C13.8618 24.6157 14.1012 24.9325 14.4178 25.1565C14.7345 25.3806 15.1129 25.5009 15.5008 25.5009C15.8887 25.5009 16.2671 25.3806 16.5838 25.1565C16.9005 24.9325 17.1398 24.6157 17.2689 24.2499H13.7314H13.7327ZM15.5002 6.74991C13.8426 6.74991 12.2529 7.40839 11.0808 8.58049C9.90867 9.75259 9.25019 11.3423 9.25019 12.9999V19.2499C9.25024 19.4968 9.17717 19.7382 9.04019 19.9437L7.83644 21.7499H23.1627L21.9589 19.9437C21.8224 19.7381 21.7498 19.4967 21.7502 19.2499V12.9999C21.7502 11.3423 21.0917 9.75259 19.9196 8.58049C18.7475 7.40839 17.1578 6.74991 15.5002 6.74991Z"
-                  fill="#898A8D"
-                />
-                <circle
-                  id="Ellipse 30"
-                  cx="21.75"
-                  cy="8"
-                  r="4.375"
-                  fill="#FF0000"
-                  stroke="#EBEBEB"
-                  stroke-width="1.25"
-                />
-              </g>
-            </svg>
+              alt="miNotification"
+            />
           </div>
         </div>
       </div>

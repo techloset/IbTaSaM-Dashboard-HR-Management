@@ -54,7 +54,7 @@ const SideBar = () => {
               </div>
             </div>
             <div className="flex">
-              <div class="w-[30.55px] h-[30.55px] relative">
+              <div className="w-[30.55px] h-[30.55px] relative">
                 <img src={more} alt="more" />
               </div>
             </div>
