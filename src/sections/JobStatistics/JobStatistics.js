@@ -1,4 +1,5 @@
 import React from "react";
+import arrowDown from "../../assets/svg/jobStatisticsSvg/akar-icons_chevron-down.svg";
 import BarGraph from "../../components/barGraph/BarGraph";
 import ReChart from "../../components/ReChart/ReChart";
 const JobStatistics = () => {
@@ -24,21 +25,7 @@ const JobStatistics = () => {
                 This Month
               </div>
               <div className="w-4 h-4 relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M2.66669 6L8.00002 11.3333L13.3334 6"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <img src={arrowDown} alt="arrowDownIcon" />
               </div>
             </div>
           </div>

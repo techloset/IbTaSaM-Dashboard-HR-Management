@@ -13,7 +13,7 @@ function App() {
 
       <SideBar />
 
-      <div className="p-5 sm:ml-[279px]">
+      <div className="p-5 md:ml-[279px]">
         <TopCards />
         <JobStatistics />
 
