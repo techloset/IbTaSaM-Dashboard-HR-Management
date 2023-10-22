@@ -9,7 +9,7 @@ import svg6 from "../../assets/svg/calendar.svg";
 import svg7 from "../../assets/svg/frame.svg";
 import svg8 from "../../assets/svg/setting-2.svg";
 import SideBarList from "../sideBarList/SideBarList";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 const SideBar = () => {
   const [show, setShow] = useState(true);
@@ -20,9 +20,14 @@ const SideBar = () => {
         data-drawer-toggle="logo-sidebar"
         aria-controls="logo-sidebar"
         type="button"
+        onClick={() => setShow(!show)}
         className="absolute right-24 top-12 sm:top-4 inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden"
       >
-        <AiOutlineMenu className="w-6 h-6" onClick={() => setShow(!show)} />
+        {show ? (
+          <AiOutlineMenu className="w-6 h-6" />
+        ) : (
+          <AiOutlineClose className="w-6 h-6" />
+        )}
       </button>
 
       <aside
