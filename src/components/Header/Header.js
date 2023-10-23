@@ -26,7 +26,7 @@ const Header = () => {
           </h3>
         </div>
         <div className="col-span-9 sm:col-span-5 md:col-span-7  lg:col-span-9 flex items-center">
-          <div className="relative ms-16">
+          <div className="relative ms-4 md:ms-16">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <img
                 src={searchIcon}

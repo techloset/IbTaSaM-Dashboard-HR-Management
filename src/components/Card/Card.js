@@ -1,7 +1,7 @@
 const Card = (props) => {
   return (
     <div
-      className={`lg:max-w-[450px] xl:max-w-[249px] max-h-[139px] ${props.cardCss} bg-white border-[2px] border-_borderColor rounded-[6px] p-5 flex flex-col justify-center`}
+      className={`lg:max-w-[450px] xl:max-w-[249px] max-h-[139px] ${props.cardCss} bg-white border-[2px] border-_borderColor rounded-[6px] p-5 flex flex-col justify-center  flex-shrink-0`}
     >
       <div className="flex">
         <h4 className="text-_cardColor text-[16px] font-[700] leading-normal tracking-[0.16px] flex-shrink-0">

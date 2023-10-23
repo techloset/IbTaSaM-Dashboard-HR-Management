@@ -13,3 +13,7 @@ body {
 .employee {
   @apply text-neutral-400 text-[10px] sm:text-sm font-normal tracking-tight;
 }
+
+.sidebarStyle{
+  @apply hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline
+}

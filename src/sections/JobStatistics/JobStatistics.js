@@ -1,10 +1,9 @@
 import React from "react";
 import arrowDown from "../../assets/svg/jobStatisticsSvg/akar-icons_chevron-down.svg";
-import BarGraph from "../../components/barGraph/BarGraph";
 import ReChart from "../../components/ReChart/ReChart";
 const JobStatistics = () => {
   return (
-    <div className="grid grid-cols-1 my-7  overflow-x-auto">
+    <div className="grid grid-cols-1 my-7 overflow-x-auto">
       <div className="w-[1115px] md:h-[362px] bg-white border-[2px] border-_borderColor rounded-[6px] p-6">
         <div className="flex items-center justify-between mb-9">
           <div className="text-center sm:text-left text-black text-[22.40px] font-bold font-['Product Sans'] tracking-tight flex-shrink-0">
@@ -31,7 +30,6 @@ const JobStatistics = () => {
           </div>
         </div>
         <ReChart />
-        {/* <BarGraph /> */}
       </div>
     </div>
   );

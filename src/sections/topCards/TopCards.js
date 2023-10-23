@@ -34,7 +34,7 @@ const cardData = [
     title: "Resigned Employees",
     percent: "7.0%",
     trendImg: trendImg1,
-    perCss: "text-_danger bg-_bgDanger",
+    perCss: "text-_danger bg-_bgDanger flex-shrink-0",
     total: "17",
     desi: "Employee",
   },

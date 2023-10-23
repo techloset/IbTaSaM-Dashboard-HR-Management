@@ -14,73 +14,125 @@ import {
 const data = [
   {
     name: "Jan",
-    uv: 18,
-    pv: 30,
-    number: 80,
+    dark: 50,
+    lite: 15,
   },
   {
     name: "Feb",
-    uv: 12,
-    pv: 43,
+    dark: 62,
+    lite: 16,
   },
   {
     name: "Mar",
-    uv: 20,
-    pv: 50,
+    dark: 72,
+    lite: 18,
   },
   {
-    name: "Apr",
-    uv: 10,
-    pv: 40,
+    name: "April",
+    dark: 58,
+    lite: 15,
   },
   {
     name: "May",
-    uv: 13,
-    pv: 23,
+    dark: 43,
+    lite: 15,
   },
   {
     name: "Jun",
-    uv: 10,
-    pv: 40,
+    dark: 58,
+    lite: 15,
   },
   {
-    name: "July",
-    uv: 12,
-    pv: 43,
+    name: "Jul",
+    dark: 62,
+    lite: 16,
   },
   {
     name: "Aug",
-    uv: 30,
-    pv: 53,
+    dark: 77,
+    lite: 25,
   },
   {
     name: "Sep",
-    uv: 25,
-    pv: 45,
+    dark: 64,
+    lite: 20,
   },
   {
     name: "Oct",
-    uv: 20,
-    pv: 40,
+    dark: 58,
+    lite: 22,
   },
   {
     name: "Nov",
-    uv: 18,
-    pv: 30,
+    dark: 50,
+    lite: 12,
   },
   {
     name: "Dec",
-    uv: 15,
-    pv: 55,
+    dark: 73,
+    lite: 15,
   },
+  // {
+  //   name: "Feb",
+  //   uv: 12,
+  //   pv: 43,
+  // },
+  // {
+  //   name: "Mar",
+  //   uv: 20,
+  //   pv: 50,
+  // },
+  // {
+  //   name: "Apr",
+  //   uv: 10,
+  //   pv: 40,
+  // },
+  // {
+  //   name: "May",
+  //   uv: 13,
+  //   pv: 23,
+  // },
+  // {
+  //   name: "Jun",
+  //   uv: 10,
+  //   pv: 40,
+  // },
+  // {
+  //   name: "July",
+  //   uv: 12,
+  //   pv: 43,
+  // },
+  // {
+  //   name: "Aug",
+  //   uv: 30,
+  //   pv: 53,
+  // },
+  // {
+  //   name: "Sep",
+  //   uv: 25,
+  //   pv: 45,
+  // },
+  // {
+  //   name: "Oct",
+  //   uv: 20,
+  //   pv: 40,
+  // },
+  // {
+  //   name: "Nov",
+  //   uv: 18,
+  //   pv: 30,
+  // },
+  // {
+  //   name: "Dec",
+  //   uv: 15,
+  //   pv: 55,
+  // },
 ];
 
 export default class ReChart extends PureComponent {
-  //   static demoUrl = "https://codesandbox.io/s/stacked-bar-chart-s47i2";
-
   render() {
     return (
-      <ResponsiveContainer width="100%" height="85%">
+      <ResponsiveContainer width="100%" height="80%">
         <BarChart
           width="100%"
           height="100%"
@@ -98,21 +150,29 @@ export default class ReChart extends PureComponent {
             horizontal={true}
             vertical={false}
           />
+
           <XAxis
+            axisLine={false}
+            fontFamily="sans-serif"
+            tickLine={false}
             dataKey="name"
             stroke="#BCBCBC"
             fontSize={13}
             fontWeight={500}
           />
           <YAxis
+            type="number"
+            domain={[20, 100]}
+            axisLine={false}
+            fontFamily="sans-serif"
+            tickLine={false}
             dataKey="number"
-            style={{ outline: "none" }}
             stroke="#BCBCBC"
             fontSize={14.335}
             fontWeight={400}
           />
-          <Bar dataKey="pv" stackId="a" fill="#5932EA" />
-          <Bar dataKey="uv" stackId="a" fill="#F2EFFF" />
+          <Bar dataKey="dark" stackId="a" fill="#5932EA" />
+          <Bar dataKey="lite" stackId="a" fill="#F2EFFF" />
         </BarChart>
       </ResponsiveContainer>
     );

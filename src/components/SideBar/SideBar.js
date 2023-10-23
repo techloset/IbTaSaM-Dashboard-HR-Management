@@ -11,6 +11,69 @@ import svg8 from "../../assets/svg/setting-2.svg";
 import SideBarList from "../sideBarList/SideBarList";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+
+const sidebarData = [
+  {
+    classOuterDiv:
+      "bg-_lightGray text-_main [&>span]:font-[700] [&>span]:leading-normal [&>span]:tracking-[0.19px]",
+    svg: svg1,
+    svgAlt: "icon1",
+    heading: "Dashboard",
+  },
+  {
+    classOuterDiv: "sidebarStyle",
+    classInnerDiv: "hidden",
+    svg: svg2,
+    svgAlt: "icon2",
+    heading: "Finance",
+  },
+  {
+    classOuterDiv: "sidebarStyle",
+    classInnerDiv: "hidden",
+    svg: svg3,
+    svgAlt: "icon3",
+    heading: "Employees",
+  },
+  {
+    classOuterDiv: "sidebarStyle",
+    classInnerDiv: "hidden",
+    svg: svg4,
+    svgAlt: "icon4",
+    heading: "Company",
+  },
+  {
+    classOuterDiv: "sidebarStyle",
+    classInnerDiv: "hidden",
+    svg: svg5,
+    svgAlt: "icon5",
+    heading: "Candidate",
+  },
+  {
+    classOuterDiv: "mb-6 sidebarStyle",
+    classInnerDiv: "hidden",
+    svg: svg6,
+    svgAlt: "icon6",
+    heading: "Calendar",
+  },
+];
+
+const sidebarBottomData = [
+  {
+    classOuterDiv: "mt-6 sidebarStyle",
+    classInnerDiv: "hidden",
+    svg: svg7,
+    svgAlt: "icon7",
+    heading: "Profile",
+  },
+  {
+    classOuterDiv: "sidebarStyle",
+    classInnerDiv: "hidden",
+    svg: svg8,
+    svgAlt: "icon8",
+    heading: "Setting",
+  },
+];
+
 const SideBar = () => {
   const [show, setShow] = useState(true);
   return (
@@ -34,12 +97,12 @@ const SideBar = () => {
         id="logo-sideba"
         className={`absolute  left-0 z-40 transition-transform -translate-x-full md:translate-x-0 bg-white ${
           show
-            ? "hidden md:inline transition-transform"
+            ? "hidden md:inline transition-transform "
             : "inline translate-x-0 transition-transform"
         }`}
         aria-label="Sidebar"
       >
-        <div className="w-[273px] h-[133vh] xl:h-[892px] overflow-y-auto flex flex-col flex-shrink-0 border-r-[1px] border-_borderColor">
+        <div className="w-[273px] h-[892px] overflow-y-auto flex flex-col flex-shrink-0 border-r-[1px] border-_borderColor">
           <a href="#" className="flex items-center justify-around my-8">
             <div className="flex items-center justify-between ml-4">
               <img src={img} className="w-[52px] h-[52px] mr-3" alt="Profile" />
@@ -59,71 +122,30 @@ const SideBar = () => {
             </div>
           </a>
           <ul className="space-y-2 font-medium">
-            <SideBarList
-              classOuterDiv="bg-_lightGray text-_main [&>span]:font-[700] [&>span]:leading-normal [&>span]:tracking-[0.19px]"
-              classInnerDiv=""
-              svg={svg1}
-              svgAlt="icon1"
-              heading="Dashboard"
-            />
-
-            <SideBarList
-              classOuterDiv="hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline"
-              classInnerDiv="hidden"
-              svg={svg2}
-              svgAlt="icon2"
-              heading="Finance"
-            />
-
-            <SideBarList
-              classOuterDiv="hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline"
-              classInnerDiv="hidden"
-              svg={svg3}
-              svgAlt="icon3"
-              heading="Employees"
-            />
-
-            <SideBarList
-              classOuterDiv="hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline"
-              classInnerDiv="hidden"
-              svg={svg4}
-              svgAlt="icon4"
-              heading="Company"
-            />
-
-            <SideBarList
-              classOuterDiv="hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline"
-              classInnerDiv="hidden"
-              svg={svg5}
-              svgAlt="icon5"
-              heading="Candidate"
-            />
-
-            <SideBarList
-              classOuterDiv="mb-6 hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline"
-              classInnerDiv="hidden"
-              svg={svg6}
-              svgAlt="icon6"
-              heading="Calendar"
-            />
-
+            {sidebarData.map((item) => {
+              return (
+                <SideBarList
+                  classOuterDiv={item.classOuterDiv}
+                  classInnerDiv={item.classInnerDiv}
+                  svg={item.svg}
+                  svgAlt={item.svgAlt}
+                  heading={item.heading}
+                />
+              );
+            })}
             <div className="border border-dashed border-_borderGray"></div>
 
-            <SideBarList
-              classOuterDiv="mt-6 hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline"
-              classInnerDiv="hidden"
-              svg={svg7}
-              svgAlt="icon7"
-              heading="Profile"
-            />
-
-            <SideBarList
-              classOuterDiv="hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline"
-              classInnerDiv="hidden"
-              svg={svg8}
-              svgAlt="icon8"
-              heading="Setting"
-            />
+            {sidebarBottomData.map((item) => {
+              return (
+                <SideBarList
+                  classOuterDiv={item.classOuterDiv}
+                  classInnerDiv={item.classInnerDiv}
+                  svg={item.svg}
+                  svgAlt={item.svgAlt}
+                  heading={item.heading}
+                />
+              );
+            })}
           </ul>
         </div>
       </aside>
