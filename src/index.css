@@ -9,3 +9,7 @@ body {
 .graphShadow {
   box-shadow: 0px 8px 12px 0px rgba(135, 145, 233, 0.3);
 }
+
+.employee {
+  @apply text-neutral-400 text-[10px] sm:text-sm font-normal tracking-tight;
+}

@@ -40,8 +40,6 @@ const cardData = [
   },
 ];
 
-console.log(cardData);
-
 export default function TopCards() {
   return (
     <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-0">
