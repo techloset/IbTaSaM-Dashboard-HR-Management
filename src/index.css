@@ -21,3 +21,8 @@ body {
 .sidebarStyle {
   @apply hover:bg-_lightGray text-_lightBlack [&>span]:font-[400] [&>span]:leading-normal [&>span]:tracking-[0.19px] [&>div]:hover:inline;
 }
+
+.bar-chart-bar {
+  border-radius: 20px;
+  /* You can add additional styling properties if needed */
+}

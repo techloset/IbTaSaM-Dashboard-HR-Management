@@ -11,7 +11,7 @@ const Card = (props) => {
           className={`ml-3 pl-0.5 pr-1 flex items-center gap-[3px] ${props.perCss} bg-opacity-[0.1] rounded-[50px]`}
         >
           <img src={props.trendImg} alt="Trending Image" />
-          <span className="text-[14px] font-[600] leading-normal tracking-[0.14px]">
+          <span className="text-[14px] font-[400] leading-normal tracking-[0.14px]">
             {props.percent}
           </span>
         </span>
